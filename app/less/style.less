@@ -1,0 +1,51 @@
+@rgb-in: rgb(255, 255, 255);
+@rgb-out: rgb(220, 220, 220);
+
+body {
+    font-size: 13px;
+    background: -webkit-radial-gradient(@rgb-in, @rgb-out);
+    background:         radial-gradient(@rgb-in, @rgb-out);
+}
+
+ul {
+    list-style-type: circle;
+    margin-left: 46px;
+    li {
+        font-size: 0.7em;
+    }
+}
+
+dl {
+    dt {
+        margin-top: 0.6em;
+        font-size: 0.74em;
+    }
+    dd {
+        font-size: 0.7em;
+    }
+}
+
+a {
+    padding: 0;
+}
+
+.ref {
+    margin-top: 1em;
+    font-size: 0.6em;
+}
+
+.snippet {
+    display: block;
+    font-size: 0.74em;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, .5);
+    font-family: monospace;
+    &.small {
+        font-size: 0.4em;
+    }
+}
+
+.step, .slide {
+    width: 1000px;
+}

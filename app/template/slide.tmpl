@@ -1,0 +1,287 @@
+<div id="impress">
+    <div id="first" data-x="-1100" data-y="-1100" class="step ">
+        <h1>フロンドエンド開発で楽したい</h1>
+        <h2>〜ユーザーと自分に優しく〜</h2>
+        <p>@BizReach</p>
+    </div>
+
+    <div id="aboutme" data-x="-40" data-y="-1100" class="step ">
+        <div>
+            <h2>About me</h2>
+            <ul>
+                <li>shoito - 伊藤 祥</li>
+                <li>フロントエンド寄りの開発者</li>
+                <li>astah(JUDE)開発 -> niconico開発</li>
+                <li>興味: JS, HTML5, Web tech, Scala, Java, Chrome拡張</li>
+                <li><a href="http://about.me/shoito">http://about.me/shoito</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="background" data-x="1020" data-y="-1100" class="step ">
+        <div>
+            <h2>Background</h2>
+            <dl class="talk">
+                <dt>某社新人さん:</dt>
+                <dd>「IEとかChrome、複数のブラウザで簡単にJSのテストできないですかね？」</dd>
+                <dd>「JSファイルの結合？コミット前にGoogle Closure Compilerコマンドでやってます。」</dd>
+                <dd>「Lint？ﾅﾆｿﾚ？」</dd>
+            </dl>
+        </div>
+    </div>
+
+    <div id="keywords" data-x="2080" data-y="-1100" class="step ">
+        <h2>今日のキーワード</h2>
+        <ul>
+            <li>Grunt</li>
+            <li>Bower</li>
+            <li>Karma, Testem</li>
+            <li>JSHint/JSLint</li>
+            <li>Optimize image</li>
+            <li>Concat, Minify, Uglify</li>
+            <li>LiveReload</li>
+            <li>Audits, Page Speed</li>
+            <li>Chrome拡張</li>
+        </ul>
+    </div>
+
+    <div id="targets" data-x="3140" data-y="-1100" class="step ">
+        <h2>楽したいこと</h2>
+        <ul>
+            <li>コードレビュー</li>
+            <li>ページ更新</li>
+            <li>テストの実行</li>
+            <li>JS/CSSファイルの結合</li>
+            <li>画像ファイルサイズの縮小</li>
+            <li>ブラウザのキャッシュ対策</li>
+            <li>gzip圧縮</li>
+        </ul>
+    </div>
+
+    <div id="codereview" data-x="-1100" data-y="-200" class="step ">
+        <h2>コードレビューでこんなコトない？</h2>
+        <dl class="talk">
+            <dt>Reviewer:</dt>
+            <dd>「インデント、タブじゃない？無駄な空白入ってるね」</dd>
+            <dt>Reviewee:</dt>
+            <dd>「うち、インデントってスペースで統一するんだっけ？」</dd>
+        </dl>
+        <p class="ref">本質的じゃないコト、自動チェックできるコトの指摘。</p>
+    </div>
+
+    <div id="jshint" data-x="-40" data-y="-200" class="step ">
+        <img src="img/jshint.png" width="320px"/>
+        <pre class="snippet">$ npm install jshint -g
+$ jshint app.js</pre>
+
+        <div class="ref">
+            <pre class="snippet">app.js: line 4, col 11, Expected '===' and instead saw '=='.
+app.js: line 5, col 8, Expected 'i' to have an indentation at 7 instead at 8.</pre>
+        </div>
+
+        <div class="ref">
+            <p>.jshintrc</p>
+            <pre class="snippet">{
+    "eqeqeq": true,
+    "indent": 4
+}           </pre>
+        </div>
+    </div>
+
+    <div id="largeimage" data-x="1020" data-y="-200" class="step ">
+        <h2>ページをレビューしててこんなコトない？</h2>
+        <dl class="talk">
+            <dt>Reviewer:</dt>
+            <dd>「何かページの表示が遅くなった気がする...」</dd>
+            <dd>(...Netwokタブ確認...)</dd>
+            <dd>(hoge.png 100KB, fuga.png 200KB, piyo.png 300KB)</dd>
+        </dl>
+    </div>
+
+    <div id="optimizeimage" data-x="2080" data-y="-200" class="step ">
+        <h2>OptiPNG, jpegtran</h2>
+        <pre class="snippet">$ optipng hoge.png</pre>
+
+        <div class="ref">
+            <pre class="snippet">** Processing: hoge.png
+500x223 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 3x8 bits/pixel, RGB
+Input IDAT size = 100330 bytes
+Input file size = 100381 bytes
+...
+Output file size = 60150 bytes (40231 bytes = 40.00% decrease)</pre>
+        </div>
+    </div>
+
+    <div id="trouble" data-x="3140" data-y="-200" class="step ">
+        <h1>いちいち面倒だ...</h1>
+    </div>
+
+    <div id="gruntis" data-x="-1100" data-y="700" class="step ">
+        <a href="http://gruntjs.com/" target="_blank">
+        <div>
+            <span class="logo" style="background: transparent url(img/grunt-logo.png) no-repeat; width: 300px; height: 340px; display: inline-block; zoom: 0.8;"></span>
+            <div style="display: inline-block">
+                <h2>Grunt<span style="font-size: 0.7em;"> - JavaScript Task Runner</span></h2>
+                <ul>
+                    <li>JSHint/JSLint, concat, minify, revision</li>
+                    <li>watch, LiveReload</li>
+                    <li>CoffeeScript, LESS Compile</li>
+                    <li>...more</li>
+                </ul>
+                <p>Automation!</p>
+            </div>
+        </div>
+        </a>
+    </div>
+
+    <div id="feedbackloop" data-x="-40" data-y="700" class="step ">
+        <h2>高速なフィードバックループ</h2>
+        <ul>
+            <li>JS変更 -> JSHintチェック -> テスト実行 -> リロード</li>
+            <li>CSS変更 -> CSSLintチェック -> リロード</li>
+            <li>HTML変更 -> HTML Lintチェック -> リロード</li>
+            <li>...more</li>
+        </ul>
+    </div>
+
+    <div id="purpose" data-x="1020" data-y="700" class="step ">
+        <h2>なぜこんなことをするのか？</h2>
+        <ul>
+            <li>ユーザーのため</li>
+            <li>デザイナー/エンジニアのため</li>
+            <li>インフラコストのため</li>
+        </ul>
+        <p class="ref">手作業じゃ面倒, 忘れるし間違う, 同じことを繰り返したくない</p>
+    </div>
+
+    <div id="gruntis-returned" data-x="2080" data-y="700" class="step ">
+        <a href="http://gruntjs.com/" target="_blank">
+        <div>
+            <span class="logo" style="background: transparent url(img/grunt-logo.png) no-repeat; width: 300px; height: 340px; display: inline-block; zoom: 0.8;"></span>
+            <div style="display: inline-block">
+                <h2>How to use Grunt</h2>
+                <pre class="snippet">$ npm install grunt-cli -g
+$ mkdir project && cd project
+$ npm init
+$ npm install grunt --save-dev
+&lt;Define Gruntfile.{js,coffee}&gt;
+$ grunt &lt;task&gt;</pre>
+            </div>
+        </div>
+        </a>
+    </div>
+
+    <div id="gruntfile" data-x="3140" data-y="700" class="step ">
+        <h2>Gruntfile.{js,coffee}</h2>
+        <pre class="snippet small">module.exports = function(grunt) {
+  grunt.initConfig({
+    concat: {
+      dist: {
+        src: ['.tmp/js/*.js'],
+        dest: 'js/app.js'
+      }
+    },
+    uglify: {
+      dist: {
+        src: 'js/app.js',
+        dest: 'js/app.min.js'
+      }
+    }
+  });
+};      </pre>
+    </div>
+
+    <div id="grunt-init" data-x="-1100" data-y="1600" class="step ">
+        <a href="http://gruntjs.com/project-scaffolding" target="_blank">
+            <p style="margin-bottom: 48px;">Gruntfile.{js,coffee}の定義めんどい...</p>
+            <p><b>grunt-init</b>や<b>Yeoman</b>で初期ファイルを作る手もある</p>
+        </a>
+    </div>
+
+    <div id="yeoman" data-x="-40" data-y="1600" class="step ">
+        <a href="http://yeoman.io/" target="_blank">
+            <img src="img/yeoman.png"/>
+        </a>
+    </div>
+
+    <div id="grunt-case-study" data-x="1020" data-y="1600" class="step ">
+        <figure>
+            <object type="image/svg+xml" data="img/grunt-case-study.svg"></object>
+            <figurecaption style="font-size: 0.6em;">某事例</figurecaption>
+        </figure>
+    </div>
+
+
+
+
+    <div id="livereload" data-x="2080" data-y="1600" class="step ">
+        <h2><img src="img/livereload.png"/>LiveReload</h2>
+        <h3>ページの自動リロード</h3>
+        <ul>
+            <li>JSの更新</li>
+            <li>CSSの更新</li>
+            <li>HTMLの更新</li>
+            <li>...more</li>
+        </ul>
+    </div>
+
+
+
+    <div id="testtools" data-x="3140" data-y="1600" class="step ">
+        <object type="image/svg+xml" data="img/js-test-tools-today.svg"></object>
+    </div>
+
+    <div id="karma" data-x="-1100" data-y="2500" class="step ">
+        <h2>How to use Karma</h2>
+        <pre class="snippet">$ npm install karma -g
+$ mkdir project && cd project
+$ karma init
+$ karma start</pre>
+    </div>
+
+    <div id="phantomjs" data-x="-40" data-y="2500" class="step ">
+        <a href="http://phantomjs.org/" target="_blank">
+            <img src="img/phantomjs.png"/>
+        </a>
+    </div>
+
+
+    <div id="npm" data-x="1020" data-y="2500" class="step ">
+        <a href="https://npmjs.org/" target="_blank">
+        <div>
+            <span class="logo" style="background: transparent url(img/npm.png) no-repeat; width: 537px; height: 202px; display: inline-block; zoom: 0.8; margin-right: 32px;"></span>
+            <div style="display: inline-block; vertical-align: top;">
+                <p>grunt-contrib-*</p>
+                <p>grunt-*</p>
+            </div>
+        </div>
+        </a>
+    </div>
+
+    <div id="npm-install" data-x="2080" data-y="2500" class="step ">
+        <h2>$ npm install grunt-mocha <b>--save-dev</b></h2>
+        <p style="margin-top: 36px;">package.json</p>
+        <pre class="snippet" style="font-size: 0.7em; margin-bottom: 36px;">devDependencies": {
+    "grunt-mocha": "~0.2.3",
+    ...</pre>
+        <h2>$ npm install</h2>
+    </div>
+
+    <div id="advice" data-x="3140" data-y="2500" class="step ">
+        <h2>.gitignore</h2>
+        <pre class="snippet" style="font-size: 0.7em;">node_modules/</pre>
+    </div>
+
+    <div id="jenkins" data-x="-1100" data-y="3400" class="step ">
+        <object type="image/svg+xml" data="img/jenkins.svg"></object>
+    </div>
+
+    <div id="thanks" data-x="-40" data-y="3400" class="step ">
+        <p>「こんなのもあるよ」<br/>「こうするとイイよ」<br/>「こんなの公開してるよ」<br/>という共有よろしくお願いします</p>
+    </div>
+
+    <div id="overview" data-x="1000" data-y="1200" data-scale="8" class="step">
+    </div>
+
+</div>

@@ -1,0 +1,12 @@
+.DS_Store
+*~
+*.bak
+*.swp
+
+dist
+
+.tmp/
+.bowerrc
+node_modules/
+
+npm-debug.log

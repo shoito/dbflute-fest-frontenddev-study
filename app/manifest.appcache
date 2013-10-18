@@ -1,0 +1,27 @@
+CACHE MANIFEST
+
+# 2013-06-15:v1
+
+CACHE:
+# page
+
+# js PC
+
+# css PC
+
+# images
+
+
+# misc
+humans.txt
+favicon.ico
+opensearch.xml
+
+
+NETWORK:
+/login
+/api/*
+
+
+FALLBACK:
+/	/fallback.html
