@@ -182,7 +182,7 @@ module.exports = (grunt) ->
                 nospawn: true
 
             template:
-                files: ["app/template/**/*.tmpl"]
+                files: ["app/template/*.tmpl"]
                 tasks: [
                     "template"
                     "copy"
@@ -192,7 +192,7 @@ module.exports = (grunt) ->
 
             coffee:
                 files: [
-                    "app/coffee/**/*.coffee"
+                    "app/coffee/*.coffee"
                 ]
                 tasks: [
                     "coffeelint:dist"
@@ -206,7 +206,7 @@ module.exports = (grunt) ->
                     livereload: LIVERELOAD_PORT
 
             coffeeTest:
-                files: ["test/coffee/**/*.coffee"]
+                files: ["test/coffee/*.coffee"]
                 tasks: [
                     "coffeelint:test"
                     "coffee:test"
@@ -222,7 +222,7 @@ module.exports = (grunt) ->
                 ]
 
             less:
-                files: ["app/less/**/*.less"]
+                files: ["app/less/*.less"]
                 tasks: [
                     "less:server"
                     "copy"

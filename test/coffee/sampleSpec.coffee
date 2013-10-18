@@ -1,6 +1,6 @@
 describe "mochaサンプル", ->
     it "テストが実行される", ->
-        sayHello().should.equal "hello"
+        fdev.sayHello().should.equal "hello"
 
     it "連続的にテストが実行される", ->
-        sayHello().should.equal "hello"
+        fdev.sayGoodby().should.equal "good-by"

@@ -1,75 +1,85 @@
 <div id="impress">
-    <div id="first" data-x="-1100" data-y="-1100" class="step ">
+    <div id="first" class="step">
         <h1>フロンドエンド開発で楽したい</h1>
-        <h2>〜ユーザーと自分に優しく〜</h2>
-        <p>@BizReach</p>
+        <h2 class="small">〜ユーザーと自分、みんなに優しく〜</h2>
+        <p class="smaller">@DBFluteフェス2013</p>
     </div>
 
-    <div id="aboutme" data-x="-40" data-y="-1100" class="step ">
+    <div id="aboutme" class="step">
         <div>
             <h2>About me</h2>
             <ul>
-                <li>shoito - 伊藤 祥</li>
-                <li>フロントエンド寄りの開発者</li>
-                <li>astah(JUDE)開発 -> niconico開発</li>
-                <li>興味: JS, HTML5, Web tech, Scala, Java, Chrome拡張</li>
+                <li>shoito, ｼｮｲﾄ</li>
+                <li>フロントエンド寄りのエンジニア</li>
+                <li>astah(JUDE)開発 -> nic◯nic◯の検索システム開発</li>
+                <li>興味: WebTech, Scala/Java, Elasticsearch, Chrome拡張</li>
+                <li>宮城 → 福井 → 東京</li>
                 <li><a href="http://about.me/shoito">http://about.me/shoito</a></li>
             </ul>
         </div>
     </div>
 
-    <div id="background" data-x="1020" data-y="-1100" class="step ">
+    <div id="background" class="step">
         <div>
             <h2>Background</h2>
             <dl class="talk">
                 <dt>某社新人さん:</dt>
-                <dd>「IEとかChrome、複数のブラウザで簡単にJSのテストできないですかね？」</dd>
-                <dd>「JSファイルの結合？コミット前にGoogle Closure Compilerコマンドでやってます。」</dd>
+                <dd>「IEやChromeで楽にJSのテストできないですか？」</dd>
+                <dd>「JSの結合？Closure Compiler使ってます。」</dd>
                 <dd>「Lint？ﾅﾆｿﾚ？」</dd>
             </dl>
         </div>
     </div>
 
-    <div id="keywords" data-x="2080" data-y="-1100" class="step ">
+    <div id="keywords" class="step">
         <h2>今日のキーワード</h2>
         <ul>
-            <li>Grunt</li>
-            <li>Bower</li>
-            <li>Karma, Testem</li>
+            <li>Grunt, Bower</li>
             <li>JSHint/JSLint</li>
             <li>Optimize image</li>
             <li>Concat, Minify, Uglify</li>
-            <li>LiveReload</li>
-            <li>Audits, Page Speed</li>
+            <li>Performance, Memory Leak</li>
             <li>Chrome拡張</li>
         </ul>
     </div>
 
-    <div id="targets" data-x="3140" data-y="-1100" class="step ">
+    <div id="targets" class="step">
         <h2>楽したいこと</h2>
         <ul>
             <li>コードレビュー</li>
-            <li>ページ更新</li>
+            <li>リロード</li>
             <li>テストの実行</li>
             <li>JS/CSSファイルの結合</li>
             <li>画像ファイルサイズの縮小</li>
             <li>ブラウザのキャッシュ対策</li>
             <li>gzip圧縮</li>
+            <li>計測</li>
         </ul>
     </div>
 
-    <div id="codereview" data-x="-1100" data-y="-200" class="step ">
+    <div id="codereview" class="step">
         <h2>コードレビューでこんなコトない？</h2>
         <dl class="talk">
-            <dt>Reviewer:</dt>
-            <dd>「インデント、タブじゃない？無駄な空白入ってるね」</dd>
-            <dt>Reviewee:</dt>
-            <dd>「うち、インデントってスペースで統一するんだっけ？」</dd>
+            <dt>レビューア:</dt>
+            <dd>「これ崩れてるけどタブインデントになってない？」</dd>
+            <dt>レビューイ:</dt>
+            <dd>「うち、インデントってスペースだっけ？」</dd>
         </dl>
         <p class="ref">本質的じゃないコト、自動チェックできるコトの指摘。</p>
     </div>
 
-    <div id="jshint" data-x="-40" data-y="-200" class="step ">
+    <div id="codereview2" class="step">
+        <h2>コードレビューでこんなコトない？</h2>
+        <dl class="talk">
+            <dt>レビューア:</dt>
+            <dd>「比較は==じゃなくて===使うルールだよ」</dd>
+            <dt>レビューイ:</dt>
+            <dd>「忘れてました」</dd>
+        </dl>
+        <p class="ref">本質的じゃないコト、自動チェックできるコトの指摘。</p>
+    </div>
+
+    <div id="jshint" class="step">
         <img src="img/jshint.png" width="320px"/>
         <pre class="snippet">$ npm install jshint -g
 $ jshint app.js</pre>
@@ -88,17 +98,20 @@ app.js: line 5, col 8, Expected 'i' to have an indentation at 7 instead at 8.</p
         </div>
     </div>
 
-    <div id="largeimage" data-x="1020" data-y="-200" class="step ">
-        <h2>ページをレビューしててこんなコトない？</h2>
+    <div id="largeimage" class="step">
+        <h2>ページを確認しててこんなコトない？</h2>
         <dl class="talk">
-            <dt>Reviewer:</dt>
+            <dt>レビューア:</dt>
             <dd>「何かページの表示が遅くなった気がする...」</dd>
-            <dd>(...Netwokタブ確認...)</dd>
-            <dd>(hoge.png 100KB, fuga.png 200KB, piyo.png 300KB)</dd>
+            <br/>
+            <dd class="smaller">(...通信内容を確認...)</dd>
+            <dd class="smaller">(hoge.png 100KB, fuga.png 200KB, piyo.png 300KB)</dd>
+            <br/>
+            <dd>「画像サイズでかっ！」</dd>
         </dl>
     </div>
 
-    <div id="optimizeimage" data-x="2080" data-y="-200" class="step ">
+    <div id="optimizeimage" class="step">
         <h2>OptiPNG, jpegtran</h2>
         <pre class="snippet">$ optipng hoge.png</pre>
 
@@ -113,11 +126,7 @@ Output file size = 60150 bytes (40231 bytes = 40.00% decrease)</pre>
         </div>
     </div>
 
-    <div id="trouble" data-x="3140" data-y="-200" class="step ">
-        <h1>いちいち面倒だ...</h1>
-    </div>
-
-    <div id="gruntis" data-x="-1100" data-y="700" class="step ">
+    <div id="gruntis" class="step">
         <a href="http://gruntjs.com/" target="_blank">
         <div>
             <span class="logo" style="background: transparent url(img/grunt-logo.png) no-repeat; width: 300px; height: 340px; display: inline-block; zoom: 0.8;"></span>
@@ -125,8 +134,8 @@ Output file size = 60150 bytes (40231 bytes = 40.00% decrease)</pre>
                 <h2>Grunt<span style="font-size: 0.7em;"> - JavaScript Task Runner</span></h2>
                 <ul>
                     <li>JSHint/JSLint, concat, minify, revision</li>
-                    <li>watch, LiveReload</li>
-                    <li>CoffeeScript, LESS Compile</li>
+                    <li>Watch, LiveReload</li>
+                    <li>Compile CoffeeScript, LESS</li>
                     <li>...more</li>
                 </ul>
                 <p>Automation!</p>
@@ -135,17 +144,17 @@ Output file size = 60150 bytes (40231 bytes = 40.00% decrease)</pre>
         </a>
     </div>
 
-    <div id="feedbackloop" data-x="-40" data-y="700" class="step ">
+    <div id="feedbackloop" class="step">
         <h2>高速なフィードバックループ</h2>
         <ul>
-            <li>JS変更 -> JSHintチェック -> テスト実行 -> リロード</li>
+            <li>JS変更 -> JSHintチェック -> テスト -> リロード</li>
             <li>CSS変更 -> CSSLintチェック -> リロード</li>
             <li>HTML変更 -> HTML Lintチェック -> リロード</li>
             <li>...more</li>
         </ul>
     </div>
 
-    <div id="purpose" data-x="1020" data-y="700" class="step ">
+    <div id="purpose" class="step">
         <h2>なぜこんなことをするのか？</h2>
         <ul>
             <li>ユーザーのため</li>
@@ -155,24 +164,23 @@ Output file size = 60150 bytes (40231 bytes = 40.00% decrease)</pre>
         <p class="ref">手作業じゃ面倒, 忘れるし間違う, 同じことを繰り返したくない</p>
     </div>
 
-    <div id="gruntis-returned" data-x="2080" data-y="700" class="step ">
+    <div id="gruntis-returned" class="step">
         <a href="http://gruntjs.com/" target="_blank">
         <div>
-            <span class="logo" style="background: transparent url(img/grunt-logo.png) no-repeat; width: 300px; height: 340px; display: inline-block; zoom: 0.8;"></span>
-            <div style="display: inline-block">
-                <h2>How to use Grunt</h2>
-                <pre class="snippet">$ npm install grunt-cli -g
+            <h2>How to use Grunt</h2>
+            <pre class="snippet">$ npm install grunt-cli -g
 $ mkdir project && cd project
+
 $ npm init
 $ npm install grunt --save-dev
+
 &lt;Define Gruntfile.{js,coffee}&gt;
 $ grunt &lt;task&gt;</pre>
-            </div>
         </div>
         </a>
     </div>
 
-    <div id="gruntfile" data-x="3140" data-y="700" class="step ">
+    <div id="gruntfile" class="step">
         <h2>Gruntfile.{js,coffee}</h2>
         <pre class="snippet small">module.exports = function(grunt) {
   grunt.initConfig({
@@ -192,32 +200,34 @@ $ grunt &lt;task&gt;</pre>
 };      </pre>
     </div>
 
-    <div id="grunt-init" data-x="-1100" data-y="1600" class="step ">
+    <div id="grunt-init" class="step">
         <a href="http://gruntjs.com/project-scaffolding" target="_blank">
             <p style="margin-bottom: 48px;">Gruntfile.{js,coffee}の定義めんどい...</p>
             <p><b>grunt-init</b>や<b>Yeoman</b>で初期ファイルを作る手もある</p>
         </a>
     </div>
 
-    <div id="yeoman" data-x="-40" data-y="1600" class="step ">
+    <div id="yeoman" class="step">
         <a href="http://yeoman.io/" target="_blank">
             <img src="img/yeoman.png"/>
         </a>
     </div>
 
-    <div id="grunt-case-study" data-x="1020" data-y="1600" class="step ">
+    <div id="yeomangenerator" class="step">
+        <a href="http://yeoman.io/community-generators.html" target="_blank">
+            <img src="img/yo-gen.png"/>
+        </a>
+    </div>
+
+    <div id="grunt-case-study" class="step">
         <figure>
             <object type="image/svg+xml" data="img/grunt-case-study.svg"></object>
-            <figurecaption style="font-size: 0.6em;">某事例</figurecaption>
+            <figurecaption style="font-size: 0.6em;">弊社事例</figurecaption>
         </figure>
     </div>
 
-
-
-
-    <div id="livereload" data-x="2080" data-y="1600" class="step ">
+    <div id="livereload" class="step">
         <h2><img src="img/livereload.png"/>LiveReload</h2>
-        <h3>ページの自動リロード</h3>
         <ul>
             <li>JSの更新</li>
             <li>CSSの更新</li>
@@ -226,28 +236,28 @@ $ grunt &lt;task&gt;</pre>
         </ul>
     </div>
 
-
-
-    <div id="testtools" data-x="3140" data-y="1600" class="step ">
+    <div id="testtools" class="step">
         <object type="image/svg+xml" data="img/js-test-tools-today.svg"></object>
     </div>
 
-    <div id="karma" data-x="-1100" data-y="2500" class="step ">
+    <div id="karma" class="step">
         <h2>How to use Karma</h2>
         <pre class="snippet">$ npm install karma -g
 $ mkdir project && cd project
+
 $ karma init
 $ karma start</pre>
     </div>
 
-    <div id="phantomjs" data-x="-40" data-y="2500" class="step ">
+<!--
+    <div id="phantomjs" class="step">
         <a href="http://phantomjs.org/" target="_blank">
             <img src="img/phantomjs.png"/>
         </a>
     </div>
+-->
 
-
-    <div id="npm" data-x="1020" data-y="2500" class="step ">
+    <div id="npm" class="step">
         <a href="https://npmjs.org/" target="_blank">
         <div>
             <span class="logo" style="background: transparent url(img/npm.png) no-repeat; width: 537px; height: 202px; display: inline-block; zoom: 0.8; margin-right: 32px;"></span>
@@ -259,29 +269,76 @@ $ karma start</pre>
         </a>
     </div>
 
-    <div id="npm-install" data-x="2080" data-y="2500" class="step ">
-        <h2>$ npm install grunt-mocha <b>--save-dev</b></h2>
+    <div id="npm-install" class="step">
+        <pre class="snippet" style="font-size: 0.7em;">$ npm install grunt-mocha <b>--save-dev</b></pre>
         <p style="margin-top: 36px;">package.json</p>
         <pre class="snippet" style="font-size: 0.7em; margin-bottom: 36px;">devDependencies": {
     "grunt-mocha": "~0.2.3",
     ...</pre>
-        <h2>$ npm install</h2>
+        <pre class="snippet" style="font-size: 0.7em;">$ npm install</pre>
     </div>
 
-    <div id="advice" data-x="3140" data-y="2500" class="step ">
+    <div id="advice" class="step">
         <h2>.gitignore</h2>
         <pre class="snippet" style="font-size: 0.7em;">node_modules/</pre>
     </div>
 
-    <div id="jenkins" data-x="-1100" data-y="3400" class="step ">
+    <div id="jenkins" class="step">
         <object type="image/svg+xml" data="img/jenkins.svg"></object>
     </div>
 
-    <div id="thanks" data-x="-40" data-y="3400" class="step ">
-        <p>「こんなのもあるよ」<br/>「こうするとイイよ」<br/>「こんなの公開してるよ」<br/>という共有よろしくお願いします</p>
+    <div id="highperformancewebsite" class="step">
+        <img class="inline" src="img/highp1.jpeg"/>
+        <img class="inline" src="img/highp2.jpeg"/>
     </div>
 
-    <div id="overview" data-x="1000" data-y="1200" data-scale="8" class="step">
+    <div id="pagespeed" class="step">
+        <a href="https://developers.google.com/speed/pagespeed/" target="_blank">
+            <img src="img/pagespeed.png"/>
+        </a>
+    </div>
+
+    <div id="coffeebreak" class="step">
+        <h2>ここからは時間があれば</h2>
+    </div>
+
+    <div id="modernstatic" class="step">
+        <h2>Static Site Generators</h2>
+        <a href="http://modernstatic.com/" target="_blank">
+            <img src="img/modern-static.png"/>
+        </a>
+    </div>
+
+    <div id="modernslide" class="step">
+        <h2>HTML Slideshow Tools</h2>
+        <ul>
+            <li><a href="https://github.com/bartaz/impress.js/" target="_blank">impress.js</a></li>
+            <li><a href="https://github.com/hakimel/reveal.js/" target="_blank">reveal.js</a></li>
+            <li><a href="https://github.com/gnab/remark" target="_blank">remerk</a></li>
+            <li>...more</li>
+        </ul>
+    </div>
+
+    <div id="adobeprerelease" class="step">
+        <h2>Adobe Prerelease Program</h2>
+        <a href="https://www.adobe.com/jp/joc/prerelease/overviews/" target="_blank">
+            <img src="img/adobe-prerelease.png"/>
+        </a>
+    </div>
+
+    <div id="appledeveloperprogram" class="step">
+        <h2>Mac/iOS Developer Programs</h2>
+        <a href="https://developer.apple.com/jp/programs/" target="_blank">
+            <img src="img/apple-dev.png"/>
+        </a>
+    </div>
+
+    <div id="thanks" class="step">
+        <h2>Thanks</h2>
+        <p class="smaller">fb/twitter shoito</p>
+    </div>
+
+    <div id="overview" data-scale="7" class="step">
     </div>
 
 </div>
