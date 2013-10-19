@@ -1,89 +1,422 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>フロントエンド開発で楽したい | by @shoito</title>
+    
+    <meta name="description" content="フロントエンド開発環境勉強会用資料" />
+    <meta name="author" content="@shoito" />
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="dbflute-fest-frontenddev-study : @DBFlute festival 2013" />
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>dbflute-fest-frontenddev-study</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/shoito/dbflute-fest-frontenddev-study">View on GitHub</a>
-
-          <h1 id="project_title">dbflute-fest-frontenddev-study</h1>
-          <h2 id="project_tagline">@DBFlute festival 2013</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/shoito/dbflute-fest-frontenddev-study/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/shoito/dbflute-fest-frontenddev-study/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
+    <link rel="stylesheet" href="css/f062747c.impress.min.css">
+    <link rel="stylesheet" href="css/cce274f1.style.min.css">
+    
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+<body class="impress-not-supported">
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
     </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
+<div id="impress">
+    <div id="first" class="step">
+        <h1>フロンドエンド開発で楽したい</h1>
+        <h2 class="small">〜ユーザーと自分、みんなに優しく〜</h2>
+        <p class="smaller">@DBFluteフェス2013</p>
     </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">dbflute-fest-frontenddev-study maintained by <a href="https://github.com/shoito">shoito</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
+    <div id="aboutme" class="step">
+        <div>
+            <h2>About me</h2>
+            <ul>
+                <li>shoito, ｼｮｲﾄ</li>
+                <li>フロントエンド寄りのエンジニア</li>
+                <li>astah(JUDE)開発 -> nic◯nic◯の開発</li>
+                <li>興味: WebTech, Scala/Java, Elasticsearch, Chrome拡張</li>
+                <li>宮城 → 福井 → 東京</li>
+                <li><a href="http://about.me/shoito">http://about.me/shoito</a></li>
+            </ul>
+        </div>
     </div>
 
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-677679-29");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
+    <div id="background" class="step">
+        <div>
+            <h2>Background</h2>
+            <dl class="talk">
+                <dt>某社新人さん:</dt>
+                <dd>「IEやChromeで楽にJSのテストできないですか？」</dd>
+                <dd>「JSの結合？Closure Compiler使ってます。」</dd>
+                <dd>「Lint？ﾅﾆｿﾚ？」</dd>
+            </dl>
+        </div>
+    </div>
+
+    <div id="keywords" class="step">
+        <h2>今日のキーワード</h2>
+        <ul>
+            <li>Grunt, Bower</li>
+            <li>JSHint/JSLint</li>
+            <li>Optimize image</li>
+            <li>Concat, Minify, Uglify</li>
+            <li>Performance, Memory Leak</li>
+            <li>Chrome拡張</li>
+        </ul>
+    </div>
+
+    <div id="targets" class="step">
+        <h2>楽したいこと</h2>
+        <ul>
+            <li>コードレビュー</li>
+            <li>リロード</li>
+            <li>テストの実行</li>
+            <li>JS/CSSファイルの結合</li>
+            <li>画像ファイルサイズの縮小</li>
+            <li>ブラウザのキャッシュ対策</li>
+            <li>gzip圧縮</li>
+            <li>計測</li>
+        </ul>
+    </div>
+
+    <div id="codereview" class="step">
+        <h2>コードレビューでこんなコトない？</h2>
+        <dl class="talk">
+            <dt>レビューア:</dt>
+            <dd>「これ崩れてるけどタブインデントになってない？」</dd>
+            <dt>レビューイ:</dt>
+            <dd>「うち、インデントってスペースだっけ？」</dd>
+        </dl>
+        <p class="ref">本質的じゃないコト、自動チェックできるコトの指摘。</p>
+    </div>
+
+    <div id="codereview2" class="step">
+        <h2>コードレビューでこんなコトない？</h2>
+        <dl class="talk">
+            <dt>レビューア:</dt>
+            <dd>「比較は==じゃなくて===使うルールだよ」</dd>
+            <dt>レビューイ:</dt>
+            <dd>「忘れてました」</dd>
+        </dl>
+        <p class="ref">本質的じゃないコト、自動チェックできるコトの指摘。</p>
+    </div>
+
+    <div id="jshint" class="step">
+        <img src="img/358ac048.jshint.png" width="320px"/>
+        <pre class="snippet">$ npm install jshint -g
+$ jshint app.js</pre>
+
+        <div class="ref">
+            <pre class="snippet">app.js: line 4, col 11, Expected '===' and instead saw '=='.
+app.js: line 5, col 8, Expected 'i' to have an indentation at 7 instead at 8.</pre>
+        </div>
+
+        <div class="ref">
+            <p>.jshintrc</p>
+            <pre class="snippet">{
+    "eqeqeq": true,
+    "indent": 4
+}           </pre>
+        </div>
+    </div>
+
+    <div id="largeimage" class="step">
+        <h2>ページを確認しててこんなコトない？</h2>
+        <dl class="talk">
+            <dt>レビューア:</dt>
+            <dd>「何かページの表示が遅くなった気がする...」</dd>
+            <br/>
+            <dd class="smaller">(...通信内容を確認...)</dd>
+            <dd class="smaller">(hoge.png 100KB, fuga.png 200KB, piyo.png 300KB)</dd>
+            <br/>
+            <dd>「画像サイズでかっ！」</dd>
+        </dl>
+    </div>
+
+    <div id="optimizeimage" class="step">
+        <h2>OptiPNG, jpegtran</h2>
+        <pre class="snippet">$ optipng hoge.png</pre>
+
+        <div class="ref">
+            <pre class="snippet">** Processing: hoge.png
+500x223 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 3x8 bits/pixel, RGB
+Input IDAT size = 100330 bytes
+Input file size = 100381 bytes
+...
+Output file size = 60150 bytes (40231 bytes = 40.00% decrease)</pre>
+        </div>
+    </div>
+
+    <div id="gruntis" class="step">
+        <a href="http://gruntjs.com/" target="_blank">
+        <div>
+            <span class="logo" style="background: transparent url(img/grunt-logo.png) no-repeat; width: 300px; height: 340px; display: inline-block; zoom: 0.8;"></span>
+            <div style="display: inline-block">
+                <h2>Grunt<span style="font-size: 0.7em;"> - JavaScript Task Runner</span></h2>
+                <ul>
+                    <li>JSHint/JSLint, concat, minify, revision</li>
+                    <li>Watch, LiveReload</li>
+                    <li>Compile CoffeeScript, LESS</li>
+                    <li>...more</li>
+                </ul>
+                <p>Automation!</p>
+            </div>
+        </div>
+        </a>
+    </div>
+
+    <div id="feedbackloop" class="step">
+        <h2>高速なフィードバックループ</h2>
+        <ul>
+            <li>JS変更 -> JSHintチェック -> テスト -> リロード</li>
+            <li>CSS変更 -> CSSLintチェック -> リロード</li>
+            <li>HTML変更 -> HTML Lintチェック -> リロード</li>
+            <li>...more</li>
+        </ul>
+    </div>
+
+    <div id="purpose" class="step">
+        <h2>なぜこんなことをするのか？</h2>
+        <ul>
+            <li>ユーザーのため</li>
+            <li>デザイナー/エンジニアのため</li>
+            <li>インフラコストのため</li>
+        </ul>
+        <p class="ref">手作業じゃ面倒, 忘れるし間違う, 同じことを繰り返したくない</p>
+    </div>
+
+    <div id="gruntis-returned" class="step">
+        <a href="http://gruntjs.com/" target="_blank">
+        <div>
+            <h2>How to use Grunt</h2>
+            <pre class="snippet">$ npm install grunt-cli -g
+$ mkdir project && cd project
+
+$ npm init
+$ npm install grunt --save-dev
+
+&lt;Define Gruntfile.{js,coffee}&gt;
+$ grunt &lt;task&gt;</pre>
+        </div>
+        </a>
+    </div>
+
+    <div id="gruntfile" class="step">
+        <h2>Gruntfile.{js,coffee}</h2>
+        <pre class="snippet small">module.exports = function(grunt) {
+  grunt.initConfig({
+    concat: {
+      dist: {
+        src: ['.tmp/js/*.js'],
+        dest: 'js/app.js'
+      }
+    },
+    uglify: {
+      dist: {
+        src: 'js/app.js',
+        dest: 'js/app.min.js'
+      }
+    }
+  });
+};      </pre>
+    </div>
+
+    <div id="grunt-init" class="step">
+        <a href="http://gruntjs.com/project-scaffolding" target="_blank">
+            <p style="margin-bottom: 48px;">Gruntfile.{js,coffee}の定義めんどい...</p>
+            <p><b>grunt-init</b>や<b>Yeoman</b>で初期ファイルを作る手もある</p>
+        </a>
+    </div>
+
+    <div id="yeoman" class="step">
+        <a href="http://yeoman.io/" target="_blank">
+            <img src="img/2f82ef34.yeoman.png"/>
+        </a>
+    </div>
+
+    <div id="yeomangenerator" class="step">
+        <a href="http://yeoman.io/community-generators.html" target="_blank">
+            <img src="img/0ef0e7ac.yo-gen.png"/>
+        </a>
+    </div>
+
+    <div id="grunt-case-study" class="step">
+        <figure>
+            <object type="image/svg+xml" data="img/grunt-case-study.svg"></object>
+            <figurecaption style="font-size: 0.6em;">弊社事例</figurecaption>
+        </figure>
+    </div>
+
+    <div id="livereload" class="step">
+        <h2><img src="img/14d90e35.livereload.png"/>LiveReload</h2>
+        <ul>
+            <li>JSの更新</li>
+            <li>CSSの更新</li>
+            <li>HTMLの更新</li>
+            <li>...more</li>
+        </ul>
+    </div>
+
+    <div id="testtools" class="step">
+        <object type="image/svg+xml" data="img/js-test-tools-today.svg"></object>
+    </div>
+
+    <div id="karma" class="step">
+        <h2>How to use Karma</h2>
+        <pre class="snippet">$ npm install karma -g
+$ mkdir project && cd project
+
+$ karma init
+$ karma start</pre>
+    </div>
+
+<!--
+    <div id="phantomjs" class="step">
+        <a href="http://phantomjs.org/" target="_blank">
+            <img src="img/dadc839c.phantomjs.png"/>
+        </a>
+    </div>
+-->
+
+    <div id="npm" class="step">
+        <a href="https://npmjs.org/" target="_blank">
+        <div>
+            <span class="logo" style="background: transparent url(img/npm.png) no-repeat; width: 537px; height: 202px; display: inline-block; zoom: 0.8; margin-right: 32px;"></span>
+            <div style="display: inline-block; vertical-align: top;">
+                <p>grunt-contrib-*</p>
+                <p>grunt-*</p>
+            </div>
+        </div>
+        </a>
+    </div>
+
+    <div id="npm-install" class="step">
+        <pre class="snippet" style="font-size: 0.7em;">$ npm install grunt-mocha <b>--save-dev</b></pre>
+        <p style="margin-top: 36px;">package.json</p>
+        <pre class="snippet" style="font-size: 0.7em; margin-bottom: 36px;">devDependencies": {
+    "grunt-mocha": "~0.2.3",
+    ...</pre>
+        <pre class="snippet" style="font-size: 0.7em;">$ npm install</pre>
+    </div>
+
+    <div id="jenkins" class="step">
+        <object type="image/svg+xml" data="img/jenkins.svg"></object>
+    </div>
+
+    <div id="highperformancewebsite" class="step">
+        <img class="inline" src="img/8133cd6e.highp1.jpeg"/>
+        <img class="inline" src="img/f379b615.highp2.jpeg"/>
+    </div>
+
+    <div id="pagespeed" class="step">
+        <a href="https://developers.google.com/speed/pagespeed/" target="_blank">
+            <img src="img/20d603c3.pagespeed.png"/>
+        </a>
+    </div>
+
+    <div id="coffeebreak" class="step">
+        <h2>ここからは時間があれば</h2>
+    </div>
+
+    <div id="modernstatic" class="step">
+        <h2>Static Site Generators</h2>
+        <a href="http://modernstatic.com/" target="_blank">
+            <img src="img/a071a64e.modern-static.png"/>
+        </a>
+    </div>
+
+    <div id="modernslide" class="step">
+        <h2>HTML Slideshow Tools</h2>
+        <ul>
+            <li><a href="https://github.com/bartaz/impress.js/" target="_blank">impress.js</a></li>
+            <li><a href="https://github.com/hakimel/reveal.js/" target="_blank">reveal.js</a></li>
+            <li><a href="https://github.com/gnab/remark" target="_blank">remerk</a></li>
+            <li>...more</li>
+        </ul>
+    </div>
+
+    <div id="adobeprerelease" class="step">
+        <h2>Adobe Prerelease Program</h2>
+        <a href="https://www.adobe.com/jp/joc/prerelease/overviews/" target="_blank">
+            <img src="img/b9305887.adobe-prerelease.png"/>
+        </a>
+    </div>
+
+    <div id="appledeveloperprogram" class="step">
+        <h2>Mac/iOS Developer Programs</h2>
+        <a href="https://developer.apple.com/jp/programs/" target="_blank">
+            <img src="img/9f6089cc.apple-dev.png"/>
+        </a>
+    </div>
+
+    <div id="thanks" class="step">
+        <h2>Thanks</h2>
+        <p class="smaller">fb/twitter shoito</p>
+    </div>
+
+    <div id="overview" data-scale="7" class="step">
+    </div>
+
+</div>
 
 
-  </body>
+<div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+
+<script src="js/vendor/jquery/397754ba.jquery.min.js"></script>
+<script src="js/vendor/impress.js/js/e3c52964.impress.js"></script>
+<script src="js/8c9c9de0.frontdev.min.js"></script>
+<script>impress().init();</script>
+
+<!--
+    
+    The `impress()` function also gives you access to the API that controls the presentation.
+    
+    Just store the result of the call:
+    
+        var api = impress();
+    
+    and you will get three functions you can call:
+    
+        `api.init()` - initializes the presentation,
+        `api.next()` - moves to next step of the presentation,
+        `api.prev()` - moves to previous step of the presentation,
+        `api.goto( idx | id | element, [duration] )` - moves the presentation to the step given by its index number
+                id or the DOM element; second parameter can be used to define duration of the transition in ms,
+                but it's optional - if not provided default transition duration for the presentation will be used.
+    
+    You can also simply call `impress()` again to get the API, so `impress().next()` is also allowed.
+    Don't worry, it wont initialize the presentation again.
+    
+    For some example uses of this API check the last part of the source of impress.js where the API
+    is used in event handlers.
+    
+-->
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-677679-29']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
 </html>
