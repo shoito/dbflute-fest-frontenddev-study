@@ -250,7 +250,7 @@ module.exports = (grunt) ->
                 src: ["**/*"]
                 dest: "dist/js/"
                 filter: (filepath) ->
-                    return !(/\.(eot|ttf|woff|otf|png|jpg|jpeg|gif|svg|webp)$/ig.test filepath)
+                    return !(/\.(md|eot|ttf|woff|otf|png|jpg|jpeg|gif|svg|webp)$/ig.test filepath)
 
             main:
                 options:
@@ -260,7 +260,7 @@ module.exports = (grunt) ->
                 src: ["**/*"]
                 dest: "dist/"
                 filter: (filepath) ->
-                    return !(/\.(eot|ttf|woff|otf|png|jpg|jpeg|gif|svg|webp)$/ig.test filepath)
+                    return !(/js\/vendor\/|\.(eot|ttf|woff|otf|png|jpg|jpeg|gif|svg|webp)$/ig.test filepath)
 
         # デプロイ環境用(app/, public_html/)に必要ファイルを配置するコピータスク定義
         copy:
